@@ -40,11 +40,17 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(fileTree(mapOf(
+        "dir" to "libs/fullauthrfid",
+        "include" to listOf("*.aar", "*.jar"),
+        "exclude" to listOf("")
+    )))
+//    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf( "api-1.0.0", "api-1.0.0", "fullrfid-1.0.0"))))
+//    implementation(files("libs/fullauthrfid/fullauthrfid-7.2.10816.aar"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation("com.regula.documentreader.core:fullauthrfid:7.2.10816@aar")
 }
 
 project.afterEvaluate {
