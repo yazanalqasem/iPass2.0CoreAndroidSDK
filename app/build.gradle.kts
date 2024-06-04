@@ -53,6 +53,7 @@ android {
 
 dependencies {
 //    implementation(project("mylibrary"))
+    implementation(files("libs/fullauthrfid-7.2.10816.aar"))
     api(project(":mylibrary"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
