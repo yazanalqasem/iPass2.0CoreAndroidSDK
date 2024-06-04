@@ -19,13 +19,13 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         jcenter()
-        maven {
-            url =uri("https://dev81.csdevhub.com/hardcoreharry/public")
-//            url =uri("https://maven.regulaforensics.com/RegulaDocumentReader/Beta")
-        }
+//        maven {
+//            url =uri("https://dev81.csdevhub.com/hardcoreharry/public")
+////            url =uri("https://maven.regulaforensics.com/RegulaDocumentReader/Beta")
+//        }
 
         flatDir {
-            dirs ("libs")
+            dirs ("mylibrary")
         }
 
     }

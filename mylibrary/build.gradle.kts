@@ -46,8 +46,9 @@ dependencies {
 //        "exclude" to listOf("")
 //    )))
 //    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf( "api-1.0.0", "api-1.0.0", "fullrfid-1.0.0"))))
-//    implementation(files("libs/fullauthrfid/fullauthrfid-7.2.10816.aar"))
+//    implementation(files("fullauthrfid-7.2.10816.aar"))
 //    implementation("impFiles:api-7.2.9754.aar")
+    implementation(files("fullauthrfid-7.2.10816.aar"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -62,10 +63,14 @@ project.afterEvaluate {
                 from(components["release"])
                 groupId = "com.core.iPass2.0"
                 artifactId = "Core"
-                version = "2.5"
+                version = "2.6"
             }
         }
     }
 }
 configurations.maybeCreate("default")
+configurations.maybeCreate("debug")
+configurations.maybeCreate("release")
 artifacts.add("default", file("fullauthrfid-7.2.10816.aar"))
+artifacts.add("debug", file("fullauthrfid-7.2.10816.aar"))
+artifacts.add("release", file("fullauthrfid-7.2.10816.aar"))
