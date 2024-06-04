@@ -40,6 +40,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+//    implementation(files("app/libs/fullauthrfid-7.2.10816.aar"))
 //    implementation(fileTree(mapOf(
 //        "dir" to "libs/fullauthrfid",
 //        "include" to listOf("*.aar", "*.jar"),
