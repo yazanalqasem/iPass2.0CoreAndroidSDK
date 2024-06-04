@@ -53,7 +53,7 @@ android {
 
 dependencies {
 //    implementation(project("mylibrary"))
-
+    api(project(":mylibrary"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
