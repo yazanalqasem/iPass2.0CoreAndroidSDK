@@ -69,9 +69,9 @@ project.afterEvaluate {
         }
     }
 }
-configurations.maybeCreate("default")
-configurations.maybeCreate("debug")
-configurations.maybeCreate("release")
-artifacts.add("default", file("fullauthrfid-7.2.10816.aar"))
-artifacts.add("debug", file("fullauthrfid-7.2.10816.aar"))
-artifacts.add("release", file("fullauthrfid-7.2.10816.aar"))
+//configurations.maybeCreate("default")
+//configurations.maybeCreate("debug")
+//configurations.maybeCreate("release")
+//artifacts.add("default", file("fullauthrfid-7.2.10816.aar"))
+//artifacts.add("debug", file("fullauthrfid-7.2.10816.aar"))
+//artifacts.add("release", file("fullauthrfid-7.2.10816.aar"))
