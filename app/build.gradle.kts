@@ -32,17 +32,17 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "11"
     }
     buildFeatures {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.4.0"
     }
 //    packaging {
 //        resources {
@@ -53,10 +53,11 @@ android {
 
 dependencies {
 //    implementation(project("mylibrary"))
-    implementation(files("libs/fullauthrfid-7.2.10816.aar"))
+//    implementation(files("libs/fullauthrfid-7.2.10816.aar"))
+//    implementation(name = "fullauthrfid-7.2.10816", ext = "aar")
     api(project(":mylibrary"))
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
+//    implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)

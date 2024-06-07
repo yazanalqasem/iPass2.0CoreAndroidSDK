@@ -34,4 +34,4 @@ dependencyResolutionManagement {
 rootProject.name = "iPass Plus Core"
 include(":app")
 include(":mylibrary")
-//enableFeaturePreview("VERSION_CATALOGS")
+enableFeaturePreview("VERSION_CATALOGS")
