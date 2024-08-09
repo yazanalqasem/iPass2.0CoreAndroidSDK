@@ -19,10 +19,9 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         jcenter()
-//        maven {
-//            url =uri("https://dev81.csdevhub.com/hardcoreharry/public")
-////            url =uri("https://maven.regulaforensics.com/RegulaDocumentReader/Beta")
-//        }
+        maven {
+            url =uri("https://maven.regulaforensics.com/RegulaDocumentReader/Beta")
+        }
 
         flatDir {
             dirs ("mylibrary")
@@ -34,4 +33,4 @@ dependencyResolutionManagement {
 rootProject.name = "iPass Plus Core"
 include(":app")
 include(":mylibrary")
-enableFeaturePreview("VERSION_CATALOGS")
+//enableFeaturePreview("VERSION_CATALOGS")

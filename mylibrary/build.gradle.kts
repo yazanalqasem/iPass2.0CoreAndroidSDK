@@ -65,7 +65,7 @@ project.afterEvaluate {
                 from(components["release"])
                 groupId = "com.core.iPass2.0"
                 artifactId = "Core"
-                version = "2.10"
+                version = "2.11"
             }
         }
     }
