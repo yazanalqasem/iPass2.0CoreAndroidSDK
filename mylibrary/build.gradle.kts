@@ -43,7 +43,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-//    implementation("com.regula.documentreader.core:fullauthrfid:7.3.11255@aar")
 //    implementation ("com.regula.documentreader.core:fullauthrfid:7.5.12087@aar")
     implementation ("com.regula.documentreader.core:fullauthrfid:7.5.12253@aar")
 }
@@ -61,9 +60,3 @@ project.afterEvaluate {
         }
     }
 }
-//configurations.maybeCreate("default")
-//configurations.maybeCreate("debug")
-//configurations.maybeCreate("release")
-//artifacts.add("default", file("fullauthrfid-7.2.10816.aar"))
-//artifacts.add("debug", file("fullauthrfid-7.2.10816.aar"))
-//artifacts.add("release", file("fullauthrfid-7.2.10816.aar"))
