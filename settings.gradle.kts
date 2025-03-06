@@ -20,7 +20,7 @@ dependencyResolutionManagement {
         mavenCentral()
         jcenter()
         maven {
-            url =uri("https://maven.regulaforensics.com/RegulaDocumentReader/Beta")
+            url =uri("https://maven.regulaforensics.com/RegulaDocumentReader")
         }
 
         flatDir {

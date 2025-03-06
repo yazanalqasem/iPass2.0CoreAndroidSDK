@@ -44,7 +44,8 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 //    implementation("com.regula.documentreader.core:fullauthrfid:7.3.11255@aar")
-    implementation ("com.regula.documentreader.core:fullauthrfid:7.5.12087@aar")
+//    implementation ("com.regula.documentreader.core:fullauthrfid:7.5.12087@aar")
+    implementation ("com.regula.documentreader.core:fullauthrfid:7.5.12253@aar")
 }
 
 project.afterEvaluate {
@@ -55,7 +56,7 @@ project.afterEvaluate {
                 from(components["release"])
                 groupId = "com.core.iPass2.0"
                 artifactId = "Core"
-                version = "2.15"
+                version = "2.16"
             }
         }
     }
